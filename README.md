@@ -1,1 +1,1 @@
-
+"BloodLink is a web-based platform designed to bridge the communication gap between hospitals and blood donors during emergencies. It features a dual-portal architecture: a Hospital Dashboard for real-time inventory tracking and posting urgent requests, and a Donor Portal that ensures safety by automatically validating donor eligibility based on medical guidelines (e.g., the 90-day interval rule). The system aims to reduce response times for critical blood requirements."
