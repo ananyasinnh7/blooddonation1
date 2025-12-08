@@ -1,0 +1,28 @@
+    </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        // Simple logic for Hospital Dashboard specific view
+        document.addEventListener('DOMContentLoaded', () => {
+            renderHospitalRequests();
+            document.getElementById('request-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const bg = document.getElementById('req-blood-group').value;
+                const urgency = document.getElementById('req-urgency').value;
+                const location = "City General Hospital"; // Hardcoded for prototype
+                const newReq = {
+                    id: Date.now(),
+                    bloodGroup: bg,
+                    location: location,
+                    urgency: urgency,
+                    date: new Date().toLocaleDateString()
+                };
+                addRequest(newReq);
+                renderHospitalRequests();
+                e.target.reset();
+                alert('Request Posted Successfully');
+            });
+        });
+    </script>
+</body>
+</html>
